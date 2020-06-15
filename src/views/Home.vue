@@ -1,5 +1,5 @@
 <template>
-    
+    <h1>Konichiwa</h1>
 </template>
 
 <script>
