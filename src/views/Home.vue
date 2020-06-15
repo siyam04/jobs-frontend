@@ -1,13 +1,24 @@
+<!--HTML-->
 <template>
-    <h1>Konichiwa</h1>
+    <div>
+        <Master>
+            <template v-slot:contents></template>
+        </Master>
+    </div>
 </template>
 
+
+<!--JS-->
 <script>
+    import Master from "../components/layouts/Master";
+
     export default {
-        name: "Home"
+        name: "Home",
+        components: {Master},
     }
 </script>
 
-<style scoped>
 
-</style>
+<!--CSS-->
+<style scoped></style>
+
