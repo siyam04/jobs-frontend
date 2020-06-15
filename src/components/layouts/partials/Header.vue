@@ -20,12 +20,17 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="#">home</a></li>
+                                            <!--<li><a href="#">home</a></li>-->
+                                            <li><router-link :to="{name: 'Home'}">Home</router-link></li>
+
                                             <li><a href="#">Browse Job</a></li>
+                                            <!--<li><router-link :to="{name: 'BrowseJob'}">Browse Job</router-link></li>-->
+
                                             <li><a href="#">pages <i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
                                                     <li><a href="#">Candidates </a></li>
-                                                    <li><a href="#">job details </a></li>
+                                                    <li><a href="#">job details</a></li>
+<!--                                                <li><router-link :to="{name: 'JobDetails'}">Job Details</router-link></li>-->
                                                     <li><a href="#">elements</a></li>
                                                 </ul>
                                             </li>

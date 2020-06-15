@@ -5,15 +5,14 @@ import VueRouter from 'vue-router'
 /*custom components*/
 import Home from '../views/Home'
 
-
 /*inserting VueRouter to the Vue framework*/
 Vue.use(VueRouter);
 
 /*array of paths*/
 const routes = [
     {path: '/', component: Home, name: 'Home'},
-    // {path: '/blog', component: Blog, name: 'Blog'},
-    // {path: '/posts/:id', component: Posts, name: 'Posts'},
+    // {path: '/browse-job', component: BrowseJob, name: 'BrowseJob'},
+    // {path: '/job/:id', component: JobDetails, name: 'JobDetails'},
 ];
 
 /*exporting Array of paths*/
