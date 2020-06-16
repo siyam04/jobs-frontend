@@ -3,7 +3,14 @@
     <div>
         <Master>
             <template v-slot:contents>
-                
+                <Slider></Slider>
+                <Catagory></Catagory>
+                <PopularCatagory></PopularCatagory>
+                <JobListing></JobListing>
+                <FeaturedCandidates></FeaturedCandidates>
+                <TopCompanies></TopCompanies>
+                <JobSearchingWrap></JobSearchingWrap>
+                <Testimonial></Testimonial>
             </template>
         </Master>
     </div>
@@ -13,14 +20,14 @@
 <!--JS-->
 <script>
     import Master from "../components/layouts/Master";
-    import Slider from "../components/layouts/partial/home/Slider";
-    import Catagory from "../components/layouts/partial/home/Catagory";
-    import PopularCatagory from "../components/layouts/partial/home/PopularCatagory";
-    import JobListing from "../components/layouts/partial/home/JobListing";
-    import FeaturedCandidates from "../components/layouts/partial/home/FeaturedCandidates";
-    import TopCompanies from "../components/layouts/partial/home/TopCompanies";
-    import JobSearchingWrap from "../components/layouts/partial/home/JobSearchingWrap";
-    import Testimonial from "../components/layouts/partial/home/Testimonial";
+    import Slider from "../components/layouts/partials/home/Slider";
+    import Catagory from "../components/layouts/partials/home/Catagory";
+    import PopularCatagory from "../components/layouts/partials/home/PopularCatagory";
+    import JobListing from "../components/layouts/partials/home/JobListing";
+    import FeaturedCandidates from "../components/layouts/partials/home/FeaturedCandidates";
+    import TopCompanies from "../components/layouts/partials/home/TopCompanies";
+    import JobSearchingWrap from "../components/layouts/partials/home/JobSearchingWrap";
+    import Testimonial from "../components/layouts/partials/home/Testimonial";
 
 
     export default {

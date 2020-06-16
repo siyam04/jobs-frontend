@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="ilstration_img wow fadeInRight d-none d-lg-block text-right" data-wow-duration="1s" data-wow-delay=".2s">
-            <img src="img/banner/illustration.png" alt="">
+            <img src="https://colorlib.com/preview/theme/jobboard2/img/banner/illustration.png" alt="">
         </div>
     </div>
 </template>
