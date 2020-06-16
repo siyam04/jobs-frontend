@@ -24,7 +24,7 @@
 
 <script>
     export default {
-        name: "SliderAreaStart"
+        name: "Slider"
     }
 </script>
 
