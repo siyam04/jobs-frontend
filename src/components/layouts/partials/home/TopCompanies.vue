@@ -9,7 +9,7 @@
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="brouse_job text-right">
-                        <a href="jobs.html" class="boxed-btn4">Browse More Job</a>
+                        <a href="#" class="boxed-btn4">Browse More Job</a>
                     </div>
                 </div>
             </div>
@@ -17,36 +17,36 @@
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_company">
                         <div class="thumb">
-                            <img src="img/svg_icon/5.svg" alt="">
+                            <img src="https://colorlib.com/preview/theme/jobboard2/img/svg_icon/5.svg" alt="">
                         </div>
-                        <a href="jobs.html"><h3>Snack Studio</h3></a>
+                        <a href="#"><h3>Snack Studio</h3></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_company">
                         <div class="thumb">
-                            <img src="img/svg_icon/4.svg" alt="">
+                            <img src="https://colorlib.com/preview/theme/jobboard2/img/svg_icon/4.svg" alt="">
                         </div>
-                        <a href="jobs.html"><h3>Snack Studio</h3></a>
+                        <a href="#"><h3>Snack Studio</h3></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_company">
                         <div class="thumb">
-                            <img src="img/svg_icon/3.svg" alt="">
+                            <img src="https://colorlib.com/preview/theme/jobboard2/img/svg_icon/3.svg" alt="">
                         </div>
-                        <a href="jobs.html"><h3>Snack Studio</h3></a>
+                        <a href="#"><h3>Snack Studio</h3></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-xl-3 col-md-6">
                     <div class="single_company">
                         <div class="thumb">
-                            <img src="img/svg_icon/1.svg" alt="">
+                            <img src="https://colorlib.com/preview/theme/jobboard2/img/svg_icon/1.svg" alt="">
                         </div>
-                        <a href="jobs.html"><h3>Snack Studio</h3></a>
+                        <a href="#"><h3>Snack Studio</h3></a>
                         <p> <span>50</span> Available position</p>
                     </div>
                 </div>
