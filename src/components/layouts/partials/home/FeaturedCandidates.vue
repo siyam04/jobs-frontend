@@ -43,7 +43,7 @@
             }
         },
         created() {
-            axios.get(`http://galib04.pythonanywhere.com/api/job/1/seeker/`).then(response => {
+            axios.get(`https://galib04.pythonanywhere.com/api/job/1/seeker/`).then(response => {
                 this.candidates = response.data
                 console.log(this.candidates)
             })

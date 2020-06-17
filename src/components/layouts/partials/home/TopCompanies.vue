@@ -45,7 +45,7 @@
             }
         },
         created() {
-            axios.get(`http://galib04.pythonanywhere.com/api/job/`).then(response => {
+            axios.get(`https://galib04.pythonanywhere.com/api/job/`).then(response => {
                 this.jobs = response.data
                 console.log(this.jobs)
             })

@@ -36,7 +36,7 @@
             }
         },
         created() {
-            axios.get(`http://galib04.pythonanywhere.com/api/category/`).then(response => {
+            axios.get(`https://galib04.pythonanywhere.com/api/category/`).then(response => {
                 // this.categories = response.data.slice(0, 5);
                 this.categories = response.data
                 console.log(this.categories)
