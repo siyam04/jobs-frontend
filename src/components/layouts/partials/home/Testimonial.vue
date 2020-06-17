@@ -32,7 +32,7 @@
                                 <div class="col-lg-11">
                                     <div class="single_testmonial d-flex align-items-center">
                                         <div class="thumb">
-                                            <img src="img/testmonial/author.png" alt="">
+                                            <img src="https://colorlib.com/preview/theme/jobboard2/img/testmonial/author.png" alt="">
                                             <div class="quote_icon">
                                                 <i class=" Flaticon flaticon-quote"></i>
                                             </div>
@@ -50,7 +50,7 @@
                                 <div class="col-lg-11">
                                     <div class="single_testmonial d-flex align-items-center">
                                         <div class="thumb">
-                                            <img src="img/testmonial/author.png" alt="">
+                                            <img src="https://colorlib.com/preview/theme/jobboard2/img/testmonial/author.png" alt="">
                                             <div class="quote_icon">
                                                 <i class="Flaticon flaticon-quote"></i>
                                             </div>
