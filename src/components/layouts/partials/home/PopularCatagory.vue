@@ -1,5 +1,6 @@
+<!--HTML-->
 <template>
-      <div class="popular_catagory_area">
+    <div class="popular_catagory_area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -13,7 +14,7 @@
                 <div class="col-lg-4 col-xl-3 col-md-6" v-for="category in categories.data" v-bind:key="category.id">
                     <div class="single_catagory">
                         <a href="#"><h4>{{category.name}}</h4></a>
-                        <p> <span>{{category.job_count}}</span>Available Jobs</p>
+                        <p><span>{{category.job_count}}</span>Available Jobs</p>
                     </div>
                 </div>
 
@@ -22,13 +23,14 @@
     </div>
 </template>
 
+
+<!--JS-->
 <script>
     import axios from 'axios';
 
-
     export default {
         name: "PopularCatagory",
-        data () {
+        data() {
             return {
                 categories: [],
             }
@@ -43,6 +45,7 @@
     }
 </script>
 
-<style scoped>
 
-</style>
+<!--CSS-->
+<style scoped></style>
+
