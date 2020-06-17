@@ -38,7 +38,7 @@
                                             </div>
                                         </div>
                                         <div class="info">
-                                            <p>"Working in conjunction with humanitarian aid agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.</p>
+                                            <p>"Working in conjunction with humanitarian aid Agencies, we have supported programmes to help alleviate human suffering through animal welfare when people might depend on livestock as their only source of income or food.</p>
                                             <span>- Micky Mouse</span>
                                         </div>
                                     </div>
