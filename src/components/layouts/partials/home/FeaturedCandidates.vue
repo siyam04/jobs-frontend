@@ -1,6 +1,8 @@
+<!--HTML-->
 <template>
      <div class="featured_candidates_area">
         <div class="container">
+
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section_title text-center mb-40">
@@ -8,100 +10,19 @@
                     </div>
                 </div>
             </div>
+
             <div class="row">
                 <div class="col-lg-12">
                     <div class="candidate_active owl-carousel">
-                        <div class="single_candidates text-center">
+
+                        <div class="single_candidates text-center" v-for="candidate in candidates.data" v-bind:key="candidate.id">
                             <div class="thumb">
                                 <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/1.png" alt="">
                             </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
+                            <a href="#"><h4>{{candidate.seeker_name}}</h4></a>
+                            <p>Designation</p>
                         </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/2.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/3.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/4.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/5.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/6.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/7.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/8.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/9.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/9.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/10.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/3.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
-                        <div class="single_candidates text-center">
-                            <div class="thumb">
-                                <img src="https://colorlib.com/preview/theme/jobboard2/img/candiateds/4.png" alt="">
-                            </div>
-                            <a href="#"><h4>Markary Jondon</h4></a>
-                            <p>Software Engineer</p>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -109,12 +30,29 @@
     </div>
 </template>
 
+
+<!--JS-->
 <script>
+    import axios from "axios";
+
     export default {
-        name: "FeaturedCandidates"
+        name: "FeaturedCandidates",
+        data() {
+            return {
+                candidates: [],
+            }
+        },
+        created() {
+            axios.get(`http://galib04.pythonanywhere.com/api/job/1/seeker/`).then(response => {
+                this.candidates = response.data
+                console.log(this.candidates)
+            })
+        }
     }
 </script>
 
-<style scoped>
 
-</style>
+<!--CSS-->
+<style scoped></style>
+
+

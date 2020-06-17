@@ -69,7 +69,6 @@
         },
         created() {
             axios.get(`http://galib04.pythonanywhere.com/api/job/`).then(response => {
-                // this.categories = response.data.slice(0, 5);
                 this.jobs = response.data
                 console.log(this.jobs)
             })
